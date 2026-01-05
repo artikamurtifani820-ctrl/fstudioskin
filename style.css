@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #e6e6fa,   /* lavender soft */
+    #d8b4fe,   /* lavender purple */
+    #c4b5fd    /* ungu lembut */
+  );
+  color: #1f2933; /* hitam lembut */
+}
+
+.hero h2 {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero img {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 22px;
+  margin: 35px auto;
+  display: block;
+  box-shadow: 0 18px 40px rgba(0,0,0,.25);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 30px;
+  background: #ec4899; /* pink kuat */
+  color: white;
+  text-decoration: none;
+  border-radius: 999px; /* bulat cewek */
+  font-weight: bold;
+}
+
+
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* CARD */
+.card {
+  background: #020617;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* BOOKING */
+.booking {
+  max-width: 500px;
+  margin: auto;
+  background: #020617;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.booking input,
+.booking select,
+.booking textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: none;
+}
+
+.booking button {
+  width: 100%;
+  padding: 14px;
+  background: #22c55e;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 16px;
+  }
+}
+/* =========================
+   BOOKING PAGE FINAL FIX
+========================= */
+
+.booking {
+  background: linear-gradient(135deg, #ffe4ec, #ffd1dc, #e6d9ff);
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.booking h2 {
+  color: #1f2933;
+  font-size: 32px;
+}
+
+.booking-desc {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  color: #374151;
+}
+
+/* FORM */
+.booking form {
+  max-width: 480px;
+  margin: auto;
+  background: #ffd1dc;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.booking input,
+.booking select,
+.booking textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.booking button {
+  background: #ec4899;
+  color: white;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.booking button:hover {
+  background: #db2777;
+}
+.about-texts {
+  margin-bottom: 40px; /* Jarak bawah teks */
+}
+.about-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px; /* Jarak antar gambar */
+  margin-top: 40px; /* Jarak atas */
+}
+
+.about-images-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Jarak bawah setiap gambar */
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; /* Jarak antar kolom */
+  margin-top: 40px; /* Jarak atas */
+}
+
+.vm-box {
+  background: #db2777;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Jarak bawah setiap box */
+}
+
+.about-card {
+  background: #7c3aed;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Jarak bawah setiap card */
+}
+
+.about-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; /* Jarak antar gambar */
+  margin-top: 40px; /* Jarak atas */
+}
+#bookingMessage {
+  color: green;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#bookingMessage.show {
+  opacity: 1;
+}

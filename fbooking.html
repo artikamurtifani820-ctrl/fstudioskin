@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Booking</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="fabout.html">About</a>
+    <a href="fgallery.html">Gallery</a>
+    <a href="fbooking.html">Booking</a>
+  </nav>
+</header>
+
+</header>
+
+<section class="container">
+  <form class="booking" id="bookingForm">
+    <input type="text" placeholder="Nama Lengkap" required>
+    <input type="email" placeholder="Email" required>
+
+    <select required>
+      <option value="">Pilih Treatment</option>
+      <option>Facial Treatment</option>
+      <option>Acne Care</option>
+      <option>Brightening</option>
+    </select>
+
+    <input type="date" required>
+    <textarea placeholder="Catatan"></textarea>
+
+    <button type="submit">Booking Sekarang</button>
+  </form>
+  <p id="bookingMessage" class="hidden">
+  Terima kasih! Booking Anda berhasil.
+</p>
+</section>
+
+<footer>
+  <p>© 2025 Artika Murtifani | 25011700309 | 01SIFP005</p>
+  <p id="waktu"></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
